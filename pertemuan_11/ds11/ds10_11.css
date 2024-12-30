@@ -1,0 +1,90 @@
+.navbar{
+    background-color: cyan;
+    margin-left:10px ;
+    color: white;
+    padding: 3x;
+}
+
+.navbar:hover{
+    background-color: rgba(0, 0, 0, 0.116);
+    transition: 0.2s;
+    box-shadow: 10px, 10px, 10px, whitesmoke;
+    border: 1px solid;
+}
+
+img{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+img:hover{
+    transform: scale(2, 2);
+    border: 5px solid gray;
+}
+
+.panjang{
+    border: 1px solid;
+    height: 150px;
+    width: 50px;
+    transition: width 2s, height 2s;
+    border-radius: 100px;
+}
+
+.panjang:hover{
+    animation-play-state: running;
+    height: 300px;
+    width: 50px;
+}
+
+.panjang{
+    animation-name: berubah;
+    animation-play-state: paused;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.bulat{
+    border: 1px solid;
+    height: 150px;
+    width: 150px;
+    transition: width 2s, height 2s;
+    border-radius: 100px;
+}
+
+.bulat:hover{
+    animation-play-state: running;
+    height: 200px;
+    width: 500px;
+}
+
+.bulat{
+    animation-name: berubah;
+    animation-play-state: paused;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.fotter{
+    color: white;
+    text-align: center;
+    animation-name: berubah;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-duration: normal;
+    animation-iteration-count: infinite;
+    box-shadow: 2px, 3px, 2px, black;
+    height: max-content;
+    font-size: 40px;
+}
+
+@keyframes berubah{
+    0%{background-color: cyan;}
+    100%{background-color: rgb(255, 255, 255);}
+}
